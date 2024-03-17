@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "K2D", sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  container-type: flex;
+  width: 95%;
+  margin: 1vw auto;
+  overflow: hidden;
+  /* border: 2px solid hotpink; */
+}
+
+.navbar {
+  width: 95%;
+  /* border: 2px solid hotpink; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 1vw 1vw;
+  container-type: flex;
+  container-name: navv;
+}
+
+.links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+  font-size: 1vw;
+}
+
+.navbar i {
+  font-size: 1vw;
+  padding: 0.5vw;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  font-weight: 300;
+}
+
+.header {
+  /* border: 2px dashed yellow; */
+  container-type: inline-size;
+  container-name: head;
+}
+
+.header h1 {
+  font-size: 4rem;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  width: 50vw;
+  /* border: 2px solid royalblue; */
+}
+
+.content p {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 300;
+  padding-right:  4vw;
+  margin: 0 1vw;
+}
+
+.content {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid violet; */
+}
+
+.content a,i{
+    color: black;
+    text-decoration: none;
+}
+
+.features .ri-arrow-right-up-line i{
+    color: black;
+    text-decoration: none;
+}
+
+.features h3{
+    font-weight: 250;
+}
+
+.content h3:nth-child(1){
+    text-decoration: underline;
+}
+
+.content h3:nth-child(1){
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+   padding: 0.5rem 0;
+    
+}
+.content h3:nth-child(2){
+    border-bottom: 1px solid black;
+   padding: 0.5rem 0;
+    
+}
+
+.img img{
+    width: 99%;
+    object-fit: cover;
+    background-position: center;
+}
+
+
+@container head (max-width: 719px) {
+  .header h1 {
+    width: 80vw;
+    font-size: 3rem;
+  }
+}
+@container head (max-width: 365px) {
+  .header h1 {
+    width: 90vw;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 700px){
+ .links a{
+ font-size: .60rem;
+ }
+}
